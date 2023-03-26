@@ -14,7 +14,7 @@ int print_sign(int n)
 	if (n > 0)
 	{
 		re = 1;
-		__putchar('+');
+		_putchar('+');
 	}
 	else if (n == 0)
 	{
