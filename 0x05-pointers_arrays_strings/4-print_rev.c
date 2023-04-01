@@ -13,8 +13,8 @@ void print_rev(char *s)
 	while (s[L] != '\0')
 		L++;
 
-	while (L)
-		_putchar(s[--L]);
+	for (i = L-1; i >= 0; i--)
+		_putchar(s[i]);
 
 	_putchar('\n');
 }
