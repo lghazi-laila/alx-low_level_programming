@@ -15,10 +15,10 @@ void rev_string(char *s)
 	while (s[L] != '\0')
 		L++;
 
-	for (i = L - 1; i >= 0; i--)
-		t[L - i - 1] = s[i];
-
-	for (i = 0; i < L; i++)
-		s[i] = t[i];
-
+	for (i = 0; i < L / 2; i++)
+	{
+		temp = s[i];
+		s[i] = s[L - i - 1];
+		s[L - i - 1] = temp;
+	}
 }
