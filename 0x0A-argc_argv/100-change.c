@@ -45,12 +45,12 @@ int main(int argc, char **argv)
 		}
 		if (amount % 1 >= 0)
 			coins += amount;
-			printf("%d\n", coins);
-			return (0);
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		printf("%d\n", coins);
+		return (0);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
